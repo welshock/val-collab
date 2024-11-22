@@ -1,0 +1,78 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    <form id="basic_form" autocomplete="off" novalidate="novalidate">
+      <div class="control-wrapper">
+        <label class="input-label" for="basic_name">Name</label>
+        <div class="input-wrapper">
+          <input
+            id="basic_name"
+            class="input"
+            autocomplete="off"
+            type="text"
+            placeholder="Enter your name"
+          />
+        </div>
+      </div>
+      <div class="control-wrapper">
+        <label class="input-label" for="basic_email">Email</label>
+        <div class="input-wrapper">
+          <input
+            id="basic_email"
+            class="input"
+            autocomplete="off"
+            type="text"
+            placeholder="Enter your email"
+          />
+        </div>
+      </div>
+      <div class="control-wrapper">
+        <label class="input-label" for="basic_password">Password</label>
+        <div class="input-wrapper">
+          <input
+            id="basic_password"
+            class="input"
+            autocomplete="off"
+            type="text"
+            placeholder="Enter your password"
+          />
+        </div>
+      </div>
+      <div class="control-wrapper">
+        <label class="input-label" for="basic_age">Age</label>
+        <div class="input-wrapper">
+          <input
+            id="basic_age"
+            class="input"
+            autocomplete="off"
+            type="text"
+            placeholder="Enter your age"
+          />
+        </div>
+      </div>
+      <div class="control-wrapper">
+        <button type="submit" class="button">Submit</button>
+      </div>
+    </form>
+    <h1>Оформлення замовлення</h1>
+    <form id="form">
+      <label for="recipient-name">Iм'я отримувача:</label>
+      <input type="text" id="recipient-name" required />
+
+      <label for="recipient-phone">Телефон отримувача:</label>
+      <input type="tel" id="recipient-phone" required />
+
+      <label for="recipient-adress">Адреса отримувача:</label>
+      <input type="text" id="recipient-adress" required />
+      <button type="submit">Вiдправити замовлення</button>
+    </form>    
+    <script src="ApiRequestNewDevilery.js"></script>
+    <script src="https://unpkg.com/just-validate@latest/dist/just-validate.production.min.js"></script>
+    <script src="script.js"></script>
+  </body>
+</html>
